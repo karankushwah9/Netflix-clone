@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.bg{
+  background-color: #dc030f;
+}
+.bg2{
+  background-color: green;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 3% 5%;
+    z-index: 10;
+    justify-content: space-between;
+}
+.netflix_logo{
+    width: 100px;
+    height: 100%;
+}
+.net_logo{
+    width: 100px;
+    height: 100%;
+}
+
+/* st */
+.navbar_items{
+    display: flex;
+    gap: 10px;
+}
+.dropdown_container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.language__drop__down{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.language__drop__down option{
+    background-color: white;
+}
+.language__drop__down:focus{
+    outline: none;
+}
+.signin_button{
+    height: 100%;
+    border: 1px solid #dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+.background_image{
+    width: 100%;
+    height: 100vh;
+}
+.heros_background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero__bg__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+  /* end */
+
+  /* st */
+  .hero_card{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero_title {
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin: 0;
+    
+}
+  .hero__subtitle,
+  .hero__description {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .hero__description {
+    margin: 1rem 0 0;
+  }
+  .email__input {
+    border: none;
+    color: white;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+  }
+  .email__label {
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153, 149, 149);
+    transition: 0.5s;
+  }
+  
+  .email__form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .form__container {
+    border: 1px solid rgb(153, 149, 149);
+    background: transparent;
+    width: 25%;
+    height: 50px;
+    position: relative;
+  }
+  
+  .email__input:focus + .email__label {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .email__input:not(:placeholder-shown).email__input:not(:focus) + .email__label {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .email__input:focus-visible {
+    outline: none;
+  }
+  
+  .primary__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    width: 150px;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2px;
+    font-size: 19px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: 0.5rem;
+  }
+
+  .feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+    display: flex;
+  }
+  
+  .feature__details {
+    text-align: left;
+    padding: 10%;
+    width: 100%;
+    
+  }
+  
+  .feature__title {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+  
+  .feature__sub__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .feature__image__container {
+    width: 100%;
+    position: relative;
+  }
+  .feature__image {
+    width: 100%;
+  }
+  
+  .feature__backgroud__video__container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+  }
+  
+  .feature__backgroud__video {
+    width: 100%;
+  }
+  /* st */
+
+  .feature__2__poster__container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 20em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 75px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+  }
+  
+  .poster__container {
+    width: 20%;
+  }
+  
+  .poster {
+    width: 90%;
+    height: 100%;
+  }
+  .poster__details {
+    width: 60%;
+  }
+  .poster__details > h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .poster__details > h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 63, 246);
+  }
+  
+  .download__gif__container {
+    width: 20%;
+    height: 100%;
+  }
+  .gif {
+    width: 100%;
+    height: 100%;
+  }
+  .feature__3__backgroud__video__container {
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+  }
+  
+  .FAQ__accordian {
+    width: 100%;
+  }
+  .FAQ__title {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 28px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .FAQ__visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden  ;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQ__visible > p {
+    margin: 1rem;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 5rem;
+  }
+  .FAQ__heading {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 90.5vh;
+  }
+  
+  
